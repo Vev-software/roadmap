@@ -1,28 +1,36 @@
-# repo-template
+# roadmap
 
-Starting point for new **Vev-software** repositories. Create a new repo with the
-green **“Use this template”** button (or `gh repo create <name> --template Vev-software/repo-template`)
-so nothing standard gets forgotten.
+> **Visibility:** PUBLIC · **Licence:** CC-BY-4.0
+> **Product:** platform · **Owner team:** architecture
 
-## What you get
+Public portfolio roadmap for the work VEV has explicitly chosen to discuss in
+public.
 
-- **`.github/workflows/add-to-project.yml`** — automatically adds every new /
-  reopened / transferred issue to the org Project board
-  ([#1](https://github.com/orgs/Vev-software/projects/1)). This is the piece that
-  is easy to forget when scaffolding a repo by hand.
-- **`.gitignore`** — sensible defaults.
-- **`LICENSE.PLACEHOLDER`** — a deliberate reminder that the repo is **unlicensed
-  until you add one**. It is intentionally *not* a real `LICENSE`, so a generated
-  repo cannot silently inherit the wrong terms.
+## Status
+Working baseline — repository bootstrap only.
 
-## After creating a repo from this template
+## What this is (and is not)
+- **Is:** the outward-facing roadmap for products, platform work and milestones
+  that are intentionally public.
+- **Is not:** unreleased commercial planning, pricing logic, internal sequencing
+  detail or company-confidential product bets.
 
-1. Replace this README with the real project README.
-2. **Add a licence.** Follow the TODO in `LICENSE.PLACEHOLDER`: pick the licence
-   from the matrix (`02 §3` / new-repository-checklist §1), add it as `LICENSE`,
-   then delete `LICENSE.PLACEHOLDER`.
-3. Confirm the org secret **`ADD_TO_PROJECT_PAT`** is available to the repo
-   (Settings → Secrets and variables → Actions). It is org-wide, so normally it
-   already is — the workflow needs it because the default `GITHUB_TOKEN` cannot
-   write to Projects v2.
-4. Open a throwaway issue and confirm it lands on the board, then close it.
+## Dependencies
+This repo is documentation/planning only and must remain clean-room public. It
+must not depend on private repositories, internal feeds or internal-only tools.
+
+## Quickstart
+No publishing pipeline is configured yet. The current bootstrap provides the
+repository boundary and governance skeleton only.
+
+## Architecture
+Repository strategy: ngineering/handbook/02-Repository-Strategy.md §3.1.
+Contribution policy: ngineering/handbook/17-Contributing.md.
+Repo-local bootstrap ADRs live under docs/adr/.
+
+## Contributing
+Public roadmap edits should describe externally discussable work only and avoid
+leaking internal sequencing or commercial detail.
+
+## Security
+Private disclosure only — see SECURITY.md.
